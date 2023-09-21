@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Cabeçalho com a logo -->
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/netflixlogo.png" alt="">
+            </a>
+        </div>
+    </div>
+<!-- Caixa de Login -->
+    <div class="login_body">
+        <div class="login_box">
+            <h2>Cadastre-se</h2>
+
+            <!-- Input Boxes com o botão de submit -->
+            <form>
+                <div class="input_box">
+                    <input required type="email" placeholder="E-mail">
+                </div>
+
+                <div class="input_box">
+                    <input required type="text" placeholder="Username">
+                </div>
+
+                <div class="input_box">
+                    <input required type="password" id= confirm_password id="password" placeholder="Senha">
+                </div>
+
+                <div class="input_box">
+                    <input required type="password" id="confirm_password" placeholder="Confirmar Senha">
+                </div>
+
+                <div>
+                    <button class="submit">
+                        Cadastrar
+                    </button>
+                </div>
+            </form>
+            <!-- Parte de baixo depois do botão -->
+            <div class="login_footer">
+
+                <div class="sign_up">
+                    <p>Já tem uma conta? <a href="index.html">Faça login!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("As senhas não coincidem!");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
