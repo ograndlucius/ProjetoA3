@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+/* Informações gerais do body */
 body {
     padding: 0;
     margin: 0;
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url(dark-background-abstract-background-network-3d-background-3840x2160-8324.png);
+    background-image: url(../../assets/login_registration/darkbackgroundlogo.png);
     background-image: cover;
     background-repeat: no-repeat;
     font-family: 'Bebas Neue', sans-serif;
 }
-
+/* Efeito de transparência/opacidade do backgroud */
 body::before {
     content: '';
     background-color: rgba(23, 30, 72, 0.5);
@@ -23,25 +23,25 @@ body::before {
     left: 0;
     right: 0;
 }
-
+/* Redimensionamento das logos */
 .logo img {
     height: 45px;
     width: 167px;
 }
-
+/* Posicionamento da caixa de cadastro em relação ao topo da página */
 .header {
     padding: 20px 50px;
     position: relative;
     text-align: center;
     z-index: 10;
 }
-
+/* Todas as configurações da caixa de cadastro */
 .login_body {
     padding: 60px;
     z-index: 90;
     position: relative;
     max-width: 450px;
-    height: 550px;
+    height: 450px;
     margin-left: 50%;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
@@ -56,6 +56,7 @@ body::before {
     margin-top: 0;
 }
 
+/* Configurações dos inputs */
 .login_body input {
     height: 50px;
     width: 100%;
@@ -75,7 +76,7 @@ body::before {
 .input_box {
     margin-bottom: 25px;
 }
-
+/* Configurações do botão */
 .login_body button {
     height: 50px;
     width: 100%;
