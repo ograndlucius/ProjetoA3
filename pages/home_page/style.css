@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../../assets/login_registration/darkbackgroundlogo.png);
+    background-image: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* body::before {
+    content: '';
+    background-color: rgba(23, 30, 72, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
+.logo img {
+    height: 45px;
+    width: 167px;  
+}
+
+.header {
+    padding: 20px 50px;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 40px;
+}
+/* MEXE DAQUI PRA BAIXO */
+.row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 350px;
+    margin-right: 10px;
+    transition: trasform 450ms;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-wrap: scroll;
+    padding: 5px;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
