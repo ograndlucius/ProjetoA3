@@ -35,7 +35,15 @@ body::before {
     padding: 20px 50px;
     position: relative;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 40px;
     z-index: 10;
+}
+.about_button img{
+    height: 3%;
+    width: 3%;
+    display: block;
+    margin-left: auto;
 }
 /* Todas as configurações da caixa de cadastro */
 .login_body {
