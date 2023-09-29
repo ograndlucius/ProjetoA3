@@ -25,21 +25,31 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-repeat: space;
+    background-repeat:repeat-x;
 } 
 
-.logo img {
-    height: 45px;
+/* Redimensionamento das logos */
+.header__logo{
     width: 167px;  
+    object-fit: contain;
 }
-
-.header {
-    padding: 20px 50px;
-    position: relative;
-    text-align: left;
-    z-index: 10;
+/* Redimensionamento do botão sobre nós */
+.header__avatar{
+    width: 50px;
+    object-fit: contain;
+}
+/* Cabeçalho/Navegation bar */
+.header{
     background-color: rgba(0, 0, 0, 0.75);
-    margin-bottom: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 20px;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
 }
 /* MEXE DAQUI PRA BAIXO */
 .row__poster {
