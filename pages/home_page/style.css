@@ -72,3 +72,13 @@ body {
 color: rgba(0,109,209,255);
 margin-left: 20px;
 }
+
+.nav__logo{
+    width: 80px;;
+    object-fit: contain;
+}
+
+.nav__avatar{
+    width: 10px;
+    object-fit: contain;
+}

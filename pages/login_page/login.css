@@ -15,37 +15,51 @@ body {
 body::before {
     content: '';
     background-color: rgba(23, 30, 72, 0.5);
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
-/* Redimensionamento das logos */
-.logo img {
-    height: 45px;
-    width: 167px;  
-}
+
 /* Posicionamento da caixa de cadastro em relação ao topo da página */
 .header {
     padding: 20px 50px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     text-align: center;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.75);
-    margin-bottom: 40px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
 }
-.about_button img{
-    height: 3%;
-    width: 3%;
-    display: block;
+
+/* Redimensionamento das logos */
+.header__logo{
+    align-items: center;
+    width: 167px;  
+    object-fit: contain;
+}
+/* Redimensionamento do botão sobre nós */
+.header__about{
     margin-left: auto;
+    width: 50px;
+    object-fit: contain;
 }
+
+
 
 /* Todas as configurações da caixa de cadastro */
 .login_body {
+    margin-top: 150px;
     padding: 60px;
     z-index: 90;
     position: relative;
