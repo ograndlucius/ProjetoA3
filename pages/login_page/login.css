@@ -31,16 +31,11 @@ body::before {
 /* Posicionamento da caixa de cadastro em relação ao topo da página */
 .header {
     padding: 20px 50px;
-<<<<<<< Updated upstream
     position: relative;
-=======
-    position: absolute;
-    width: 100%;
->>>>>>> Stashed changes
     text-align: center;
-    z-index: 10;
     background-color: rgba(0, 0, 0, 0.75);
     margin-bottom: 40px;
+    z-index: 10;
 }
 .about_button img{
     height: 3%;
