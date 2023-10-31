@@ -10,7 +10,7 @@ body {
     position: relative;
     background-image: url(../../assets/login_registration/darkbackgroundlogo.png);
     background-image: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */ 
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -19,21 +19,24 @@ body {
     background-color: rgba(23, 30, 72, 0.5);
     width: 100%;
     height: 100%;
-    z-index: -5 ;
-    position: absolute;
+    z-index: -1;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     background-repeat:repeat-x;
 } 
+body::-webkit-scrollbar{
+    width: 0px;
+}
 
 /* Redimensionamento das logos */
 .header__logo{
     width: 167px;  
     object-fit: contain;
 }
-/* Redimensionamento do botão sobre nós */
+/* Redimensionamento do botrow__postersão sobre nós */
 .header__avatar{
     width: 50px;
     object-fit: contain;
@@ -41,7 +44,7 @@ body {
 /* Cabeçalho/Navegation bar */
 .header{
     background-color: rgba(0, 0, 0, 0.75);
-    position: absolute;
+    /* position: absolute; */  /* Navbar fixed on top */
     top: 0;
     width: 100%;
     display: flex;
@@ -51,7 +54,10 @@ body {
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
-
+.row{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.391);
+}
 /* MEXE DAQUI PRA BAIXO */
 .row__poster {
     width: 100%;
@@ -65,13 +71,25 @@ body {
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
+
 }
 .row__poster:hover {
     transform: scale(1.08);
 }
-.row__posters::-webkit-scrollbar{
-    display: none;
-} 
+.row__posters::-webkit-scrollbar {
+    width: 12px;
+}
+    
+.row__posters::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.397);
+}
+  
+.row__posters::-webkit-scrollbar-thumb {
+    background-color: #4541b9;
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.397);
+}
+
 .row__posterLarge{
     max-height:400px ;
 
