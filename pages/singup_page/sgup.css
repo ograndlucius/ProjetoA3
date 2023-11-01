@@ -26,19 +26,7 @@ body::before {
     right: 0;
 }
 /* Redimensionamento das logos */
-.logo img {
-    height: 45px;
-    width: 167px;
-}
-/* Posicionamento da caixa de cadastro em relação ao topo da página */
-.header {
-    padding: 20px 50px;
-    position: relative;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    margin-bottom: 40px;
-    z-index: 10;
-}
+
 .about_button img{
     height: 3%;
     width: 3%;
@@ -57,7 +45,9 @@ body::before {
     border-radius: 10px;
     box-sizing: border-box;
     transform: translateX(-50%);
+    margin-top: 50px;
 }
+
 
 
 .login_body h2 {
