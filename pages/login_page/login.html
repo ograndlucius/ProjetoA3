@@ -33,11 +33,11 @@
             <!-- Input Boxes com o botão de submit -->
             <form>
                 <div class="input_box">
-                    <input required type="email" placeholder="Email ou número de telefone">
+                    <input required type="email" id="email" placeholder="E-mail">
                 </div>
 
                 <div class="input_box">
-                    <input required type="password" placeholder="Senha">
+                    <input required type="password" id="password" placeholder="Senha">
                 </div>
 
                 <div>
@@ -58,7 +58,7 @@
             <div class="login_footer">
 
                 <div class="sign_up">
-                    <p><a href="../home_page/homepage.html">Novo por aqui?</a><a
+                    <p><a href="../home_page/homepage.html">Novo por aqui? </a><a
                             href="../singup_page/sgup.html">Cadastre-se agora.</a></p>
                 </div>
             </div>
@@ -67,3 +67,20 @@
 </body>
 
 </html>
+
+<script>
+    
+    function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+    
+        // Verifica as credenciais
+        if (email === "admin@admin" && password === "admin") {
+            // Credenciais corretas, redireciona para outra página
+            window.location.href = "../home_page/homepage.html";
+        } else {
+            // Credenciais incorretas, exibe mensagem de erro (pode ser melhorado)
+            alert("Credenciais incorretas. Tente novamente.");
+        }
+    }
+    </script>

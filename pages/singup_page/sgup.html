@@ -39,10 +39,6 @@
                 </div>
 
                 <div class="input_box">
-                    <input required type="text" placeholder="Username">
-                </div>
-
-                <div class="input_box">
                     <input required type="password" id="password" placeholder="Senha">
                 </div>
 
@@ -82,4 +78,19 @@ function validatePassword(){
 }
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+
+function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Verifica as credenciais
+    if (username === "admin" && password === "admin") {
+        // Credenciais corretas, redireciona para outra página
+        window.location.href = "outra_pagina.html";
+    } else {
+        // Credenciais incorretas, exibe mensagem de erro (pode ser melhorado)
+        alert("Credenciais incorretas. Tente novamente.");
+    }
+}
+
 </script>

@@ -32,18 +32,18 @@ body::-webkit-scrollbar{
 }
 
 /* Redimensionamento das logos */
-.header__logo{
+.header__logo {
     width: 167px;  
     object-fit: contain;
-}
-/* Redimensionamento do botrow__postersão sobre nós */
-.header__avatar{
+} 
+/* Redimensionamento do row__poster são sobre nós */
+ .header__avatar{
     width: 50px;
     object-fit: contain;
-}
+} 
 /* Cabeçalho/Navegation bar */
-.header{
-    background-color: rgba(0, 0, 0, 0.75);
+ .header{
+    background-color: rgba(0, 0, 0, 0.75); 
     /* position: absolute; */  /* Navbar fixed on top */
     top: 0;
     width: 100%;
@@ -53,13 +53,16 @@ body::-webkit-scrollbar{
     padding: 20px;
     transition-timing-function: ease-in;
     transition: all 0.5s;
-}
-.row{
+} 
+
+/* MEXE DAQUI PRA BAIXO */
+.row {
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.391);
 }
-/* MEXE DAQUI PRA BAIXO */
+
 .row__poster {
+    display: block;
     width: 100%;
     object-fit: contain;
     max-height: 200px;
@@ -92,6 +95,7 @@ body::-webkit-scrollbar{
 
 .row__posterLarge{
     max-height:400px ;
+    display:block;
 
 }
 .row__posterLarge:hover {

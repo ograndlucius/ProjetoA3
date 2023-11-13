@@ -7,15 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Pages</title>
     <link rel="stylesheet" href="game_profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="../../assets/login_registration/favicon_package_v0.16/favicon.ico"
         type="image/x-icon">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <div class="header" id="header">
-        <a href=""><img src="../../assets/login_registration/pixelpageslogo.png" class="header__logo"></a>
-        <a href=""><img src="../../assets/login_registration/pfp_placeholder.png" class="header__avatar"></a>
-    </div>
- 
 
+        <!-- Cabeçalho -->
+    <div class="header" id="header">
+        <a href="../home_page/homepage.html"><img src="../../assets/login_registration/pixelpageslogo.png" class="header__logo"></a>
+        <form class="form-inline">
+            <nav class="mx-auto navbar navbar-expand-xxl">
+              <input class="form-control" type="search" placeholder="Search">
+              <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512"><path fill="none" stroke="white" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"/><path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg></button>
+            </nav>
+        </form>
+        <div style="justify-content: space-between;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256"><g id="galaAdd0" fill="none" stroke="white" stroke-dasharray="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="16"><circle id="galaAdd1" cx="128" cy="128" r="112"/><path id="galaAdd2" d="M 79.999992,128 H 176.0001"/><path id="galaAdd3" d="m 128.00004,79.99995 v 96.0001"/></g></svg>
+        <a href="" style="margin-left: 30px;"><img src="../../assets/login_registration/pfp_placeholder.png" class="header__avatar"></a>
+    </div>
+    </div>
+</head>
+
+<body>
+    
+    <div>
+        <div class="mx-auto card" style="width: 400px; margin-top: 150px; margin-bottom: 6px;padding: 15px; text-align: center; color: #FFFFFF;background-color: rgb(21, 81, 194);">
+            <div class="card-body">
+                <h1 class="card-title">Nome do jogo</h1>
+            </div>
+        </div>
+        <div class="mx-auto card" style="width: 300px; padding: 15px; margin-bottom: 6px; text-align: center; color: #FFFFFF;background-color: rgb(21, 81, 194);">
+            <h1 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49" fill="none">
+                <path d="M26 0L32.0619 18.6565H51.6785L35.8083 30.1869L41.8702 48.8435L26 37.3131L10.1298 48.8435L16.1917 30.1869L0.321474 18.6565H19.9381L26 0Z" fill="#FFB800"/>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49" fill="none">
+                <path d="M26 0L32.0619 18.6565H51.6785L35.8083 30.1869L41.8702 48.8435L26 37.3131L10.1298 48.8435L16.1917 30.1869L0.321474 18.6565H19.9381L26 0Z" fill="#FFB800"/>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49" fill="none">
+                <path d="M26 0L32.0619 18.6565H51.6785L35.8083 30.1869L41.8702 48.8435L26 37.3131L10.1298 48.8435L16.1917 30.1869L0.321474 18.6565H19.9381L26 0Z" fill="#FFB800"/>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49" fill="none">
+                <path d="M26 1.61804L31.5863 18.811L31.6986 19.1565H32.0619H50.1397L35.5144 29.7824L35.2205 29.9959L35.3328 30.3414L40.9191 47.5344L26.2939 36.9086L26 36.695L25.7061 36.9086L11.0809 47.5344L16.6672 30.3414L16.7795 29.9959L16.4856 29.7824L1.86032 19.1565H19.9381H20.3014L20.4137 18.811L26 1.61804Z" stroke="black"/>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49" fill="none">
+                <path d="M26 1.61804L31.5863 18.811L31.6986 19.1565H32.0619H50.1397L35.5144 29.7824L35.2205 29.9959L35.3328 30.3414L40.9191 47.5344L26.2939 36.9086L26 36.695L25.7061 36.9086L11.0809 47.5344L16.6672 30.3414L16.7795 29.9959L16.4856 29.7824L1.86032 19.1565H19.9381H20.3014L20.4137 18.811L26 1.61804Z" stroke="black"/>
+                </svg></h1>
+        </div>
+    </div>
+    <div class="mx-auto" placeholder="Status" style="display: flex; -ms-flex-align: center;">
+        <select class="mx-auto btn btn-secondary">
+            <option value="volvo">Não iniciado</option>
+            <option value="saab">Jogando</option>
+            <option value="opel">Zerado</option>
+            <option value="audi">Abandonei</option>
+      </select>
+    </div>
+    <div class="mx-auto card" style="width: 400px; margin-top: 6px; margin-bottom: 6px;padding: 15px; text-align: center; color: #FFFFFF;background-color: rgb(21, 81, 194);">
+            <p class="card-title">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat."</p>
+    </div>
 </body>
+
