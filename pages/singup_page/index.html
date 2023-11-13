@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sgup.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="../../assets/login_registration/book-32.ico" type="image/x-icon">
-    <title> Pixel Pages</title>
+    <title>Pixel Pages</title>
   <!-- Header -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center ">
     <nav style="padding: 2px;" class="navbar navbar-dark bg-dark">
@@ -18,7 +18,7 @@
       </nav>
     
       <ul class="navbar-nav ">
-        <a class="navbar-brand" href="../about_us/aboutus.html">
+        <a class="navbar-brand" href="../about_us/index.html">
             <img src="../../assets/login_registration/infoicon.png" width="50" height="50" class="d-inline-block align-top" alt="">
           </a>
       </ul>
@@ -56,7 +56,7 @@
             <div class="login_footer">
 
                 <div class="sign_up">
-                    <p>Já tem uma conta? <a href="../login_page/login.html">Faça login!</a></p>
+                    <p>Já tem uma conta? <a href="../login_page/index.html">Faça login!</a></p>
                 </div>
             </div>
         </div>
@@ -66,6 +66,9 @@
 </html>
 
 <script>
+
+    // Verificar se as senhas correspondem
+
     var password = document.getElementById("password")
   , confirm_password = document.getElementById("confirm_password");
 
@@ -78,19 +81,4 @@ function validatePassword(){
 }
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
-
-function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-    // Verifica as credenciais
-    if (username === "admin" && password === "admin") {
-        // Credenciais corretas, redireciona para outra página
-        window.location.href = "outra_pagina.html";
-    } else {
-        // Credenciais incorretas, exibe mensagem de erro (pode ser melhorado)
-        alert("Credenciais incorretas. Tente novamente.");
-    }
-}
-
 </script>

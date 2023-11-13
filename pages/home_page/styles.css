@@ -44,7 +44,6 @@ body::-webkit-scrollbar{
 /* Cabeçalho/Navegation bar */
  .header{
     background-color: rgba(0, 0, 0, 0.75); 
-    /* position: absolute; */  /* Navbar fixed on top */
     top: 0;
     width: 100%;
     display: flex;
@@ -59,6 +58,9 @@ body::-webkit-scrollbar{
 .row {
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.391);
+}
+.row h2 {
+    margin-left: 5px;
 }
 
 .row__poster {
@@ -76,13 +78,14 @@ body::-webkit-scrollbar{
     padding: 20px;
 
 }
-.row__poster:hover {
-    transform: scale(1.08);
-}
 .row__posters::-webkit-scrollbar {
     width: 12px;
 }
     
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
 .row__posters::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.397);
 }
